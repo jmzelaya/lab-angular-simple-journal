@@ -1,0 +1,10 @@
+
+
+<ul>
+  <li *ngFor= "let oneEntry of entries">
+      <h3> {{ oneEntry.title }} </h3>
+      <p>  {{ oneEntry.content }}</p>
+
+      <a [routerLink]="['/journal-entries/', oneEntry._id]"> Details </a>
+  </li>
+</ul>
